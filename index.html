@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Corretor Ortográfico — Trie</title>
+  <link rel="stylesheet" href="style_novo.css">
+</head>
+<body>
+
+  <div class="header">
+    <div class="tag">Estrutura de Dados — Trie</div>
+    <h1>Corretor Ortográfico</h1>
+    <p>Árvore de Prefixos em ação — Antonio Anselmo</p>
+  </div>
+
+  <div class="card">
+    <div class="input-wrap">
+      <span class="icon">🔤</span>
+      <input type="text" id="inputPalavra" placeholder="Digite um prefixo..." autocomplete="off" />
+    </div>
+
+    <div class="suggestions-label">
+      <span class="status-dot"></span>Sugestões do dicionário
+    </div>
+
+    <div class="suggestions" id="suggestions">
+      <span class="empty">Comece a digitar para ver sugestões...</span>
+    </div>
+
+    <hr class="divider" />
+
+    <div class="stats">
+      <div>Palavras no dicionário: <span id="totalPalavras">0</span></div>
+      <div>Sugestões encontradas: <span id="totalSugestoes">0</span></div>
+    </div>
+  </div>
+
+  <div class="footer">Firebase Realtime Database · Trie em JavaScript</div>
+
+  <script type="module" src="app_novo.js"></script>
+
+</body>
+</html>

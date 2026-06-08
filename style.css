@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f1117;
+  color: #e8e8e8;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.header h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: -0.5px;
+}
+
+.header p {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-top: 0.4rem;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  background: #1e2230;
+  color: #7c8cf8;
+  border: 1px solid #2e3450;
+  border-radius: 20px;
+  padding: 3px 12px;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.card {
+  background: #1a1d27;
+  border: 1px solid #2a2d3e;
+  border-radius: 16px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 500px;
+}
+
+.input-wrap {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.input-wrap input {
+  width: 100%;
+  background: #0f1117;
+  border: 1px solid #2a2d3e;
+  border-radius: 10px;
+  padding: 14px 16px 14px 44px;
+  font-size: 1.1rem;
+  color: #ffffff;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input-wrap input::placeholder {
+  color: #3d4155;
+}
+
+.input-wrap input:focus {
+  border-color: #7c8cf8;
+}
+
+.input-wrap .icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: #3d4155;
+}
+
+.suggestions-label {
+  font-size: 0.75rem;
+  color: #4b5263;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 0.75rem;
+}
+
+.suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  min-height: 44px;
+}
+
+.chip {
+  background: #1e2230;
+  border: 1px solid #2e3450;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  color: #a5b4fc;
+  cursor: default;
+  transition: background 0.15s, border-color 0.15s;
+  animation: fadeIn 0.15s ease;
+}
+
+.chip:hover {
+  background: #252840;
+  border-color: #7c8cf8;
+  color: #c7d2fe;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.empty {
+  font-size: 0.85rem;
+  color: #3d4155;
+  padding: 8px 0;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #2a2d3e;
+  margin: 1.5rem 0;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.78rem;
+  color: #4b5263;
+}
+
+.stats span {
+  color: #7c8cf8;
+  font-weight: 500;
+}
+
+.status-dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #22c55e;
+  margin-right: 5px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+
+.footer {
+  margin-top: 1.5rem;
+  font-size: 0.75rem;
+  color: #2e3450;
+  text-align: center;
+}
